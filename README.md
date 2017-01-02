@@ -1,2 +1,3 @@
-# dotfiles
-dot files for linux
+# README
+
+Contain home config
