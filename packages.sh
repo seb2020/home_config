@@ -6,10 +6,14 @@ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-rele
 sudo dnf install fedy
 
 # Install package
-sudo dnf install glances htop keepass filezilla borgbackup -y
+sudo dnf install glances htop keepass filezilla borgbackup telegram-desktop -y
 
 # Install calibre
 sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
 
 # Install TeamViewer
 sudo dnf install https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm
+
+# Install Spotify
+dnf config-manager --add-repo=http://negativo17.org/repos/fedora-spotify.repo
+dnf -y install spotify-client
