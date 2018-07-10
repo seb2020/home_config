@@ -1,3 +1,3 @@
 # README
 
-Contain home config
+Home config (Fedora)
