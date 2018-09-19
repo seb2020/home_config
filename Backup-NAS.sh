@@ -31,6 +31,9 @@ borg create                         \
     --exclude '/home/*/.steam/*'    \
     --exclude '/home/*/.mozilla/*'  \
     --exclude '/home/*/.local/share/Steam/*'  \
+    --exclude '/home/*/.local/share/lutris/*'  \
+    --exclude '/home/*/.local/share/Trash/*'  \
+    --exclude '/home/*/Téléchargements*'  \
     ::'{hostname}-{now}'            \
     /home/$USER                      \
 
