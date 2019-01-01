@@ -1,10 +1,10 @@
 #!/bin/sh
 
 # Borg init
-# borg init --encryption=repokey-blake2 /run/media/$USER/$USERMobile1/borgbackup-fedora-data
+# borg init --encryption=repokey-blake2 /run/media/$USER/$USERMobile1/borgbackup-fedora-usb
 
 # Setting this, so the repo does not need to be given on the commandline:
-export BORG_REPO=/run/media/$USER/$USERMobile1/borgbackup-fedora-data
+export BORG_REPO=/run/media/sgir/sgirMobile2/borgbackup-fedora-usb
 
 # Setting this, so you won't be asked for your repository passphrase:
 export BORG_PASSCOMMAND="cat /home/$USER/.borg-passphrase"
@@ -27,10 +27,11 @@ borg create                         \
     --show-rc                       \
     --compression lz4               \
     --exclude-caches                \
-    --exclude '/mnt/data/Perso/Edelweiss Loisirs' \
-    --exclude '/mnt/data/Perso/Google Drive' \
-    ::'{hostname}-data-{now}'            \
-    /mnt/data/Perso/
+    ::'{hostname}-{now}'            \
+    /home/$USER/Documents           \
+    /home/$USER/Bibliothèque\ calibre \
+    /home/$USER/.ssh                 \
+    /mnt/datalnx/Data/
 
 backup_exit=$?
 

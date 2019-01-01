@@ -27,15 +27,13 @@ borg create                         \
     --show-rc                       \
     --compression lz4               \
     --exclude-caches                \
-    --exclude '/home/*/.cache/*'    \
-    --exclude '/home/*/.steam/*'    \
-    --exclude '/home/*/.mozilla/*'  \
-    --exclude '/home/*/.local/share/Steam/*'  \
-    --exclude '/home/*/.local/share/lutris/*'  \
-    --exclude '/home/*/.local/share/Trash/*'  \
-    --exclude '/home/*/Téléchargements*'  \
     ::'{hostname}-{now}'            \
-    /home/$USER                      \
+    /home/$USER/Documents           \
+    /home/$USER/Bibliothèque\ calibre \
+    /home/$USER/.ssh                 \
+    /mnt/datalnx/Data/Images/Perso \
+    /mnt/datalnx/Data/Chalais\ Jeunesse\ comite \
+    /mnt/datalnx/Data/Game
 
 backup_exit=$?
 

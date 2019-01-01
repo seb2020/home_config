@@ -15,5 +15,9 @@ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | 
 sudo dnf install https://download.teamviewer.com/download/linux/teamviewer.x86_64.rpm
 
 # Install Spotify
-dnf config-manager --add-repo=http://negativo17.org/repos/fedora-spotify.repo
-dnf -y install spotify-client
+sudo dnf config-manager --add-repo=http://negativo17.org/repos/fedora-spotify.repo
+sudo dnf -y install spotify-client
+
+# Install snapd
+sudo dnf install snapd
+sudo ln -s /var/lib/snapd/snap /snap
