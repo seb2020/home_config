@@ -29,10 +29,10 @@ borg create                         \
     --exclude-caches                \
     ::'{hostname}-{now}'            \
     /home/$USER/Documents           \
-    /home/$USER/Bibliothèque\ calibre \
     /home/$USER/.ssh                 \
     /mnt/datalnx/Data/Images/Perso \
     /mnt/datalnx/Data/Chalais\ Jeunesse\ comite \
+    /mnt/datalnx/Data/Calibre \
     /mnt/datalnx/Data/Game
 
 backup_exit=$?

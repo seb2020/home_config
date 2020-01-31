@@ -21,3 +21,6 @@ sudo dnf -y install spotify-client
 # Install snapd
 sudo dnf install snapd
 sudo ln -s /var/lib/snapd/snap /snap
+
+# Install i3
+sudo dnf i3 rofi scrot viewnior i3status dunst
