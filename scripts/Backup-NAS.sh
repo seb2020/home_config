@@ -31,9 +31,16 @@ borg create                         \
     /home/$USER/Documents           \
     /home/$USER/.ssh                 \
     /mnt/datalnx/Data/Images/Perso \
-    /mnt/datalnx/Data/Chalais\ Jeunesse\ comite \
+    /mnt/datalnx/Data/Videos/Perso \
+    /mnt/datalnx/Data/ChalaisJeunesse_comite \
     /mnt/datalnx/Data/Calibre \
-    /mnt/datalnx/Data/Game
+    /mnt/datalnx/Data/Game \
+    /mnt/datalnx/Data/GarminConnect_Backup \
+    /mnt/datalnx/Data/MesDocuments \
+    /mnt/datalnx/Data/ModelismeTrain \
+    /mnt/datalnx/Data/_PST \
+    /mnt/datalnx/Data/_Webmaster \
+    /mnt/datalnx/Data/CryptC
 
 backup_exit=$?
 

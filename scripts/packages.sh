@@ -6,7 +6,7 @@ sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-rele
 sudo dnf install fedy
 
 # Install package
-sudo dnf install glances htop keepass filezilla borgbackup telegram-desktop -y
+sudo dnf install glances htop keepass filezilla borgbackup -y
 
 # Install calibre
 sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
